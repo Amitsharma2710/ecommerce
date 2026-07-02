@@ -132,10 +132,7 @@ const getAllProducts = async (req, res) => {
             currentPage: page,
             totalProducts,
             totalPages,
-            products: products.map(product => ({
-                name: product.name,
-                price: product.price
-            }))
+            products
 
         })
     } catch (error) {
